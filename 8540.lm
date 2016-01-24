@@ -1,0 +1,88 @@
+Language model created by QuickLM on Sun Jan 24 15:52:10 EST 2016
+Copyright (c) 1996-2010 Carnegie Mellon University and Alexander I. Rudnicky
+
+The model is in standard ARPA format, designed by Doug Paul while he was at MITRE.
+
+The code that was used to produce this language model is available in Open Source.
+Please visit http://www.speech.cs.cmu.edu/tools/ for more information
+
+The (fixed) discount mass is 0.5. The backoffs are computed using the ratio method.
+This model based on a corpus of 14 sentences and 15 words
+
+\data\
+ngram 1=15
+ngram 2=23
+ngram 3=27
+
+\1-grams:
+-0.9744 </s> -0.3010
+-0.9744 <s> -0.2297
+-1.8195 DOWN -0.2523
+-1.1206 GO -0.2668
+-1.8195 LEFT -0.2523
+-1.2175 MARCY -0.2523
+-2.1206 OFF -0.2944
+-2.1206 ON -0.2944
+-1.8195 RIGHT -0.2523
+-1.8195 SELECT -0.2523
+-1.8195 SOURCE -0.2523
+-1.8195 TO -0.2944
+-1.8195 TURN -0.2944
+-1.8195 TV -0.2523
+-1.8195 UP -0.2523
+
+\2-grams:
+-0.7482 <s> GO 0.0000
+-0.5441 <s> MARCY 0.0000
+-1.4472 <s> SELECT 0.0000
+-0.3010 DOWN </s> -0.3010
+-1.0000 GO DOWN 0.0000
+-1.0000 GO LEFT 0.0000
+-1.0000 GO RIGHT 0.0000
+-1.0000 GO TO 0.0000
+-1.0000 GO UP 0.0000
+-0.3010 LEFT </s> -0.3010
+-0.5051 MARCY GO 0.0000
+-1.2041 MARCY SELECT 0.0000
+-0.9031 MARCY TURN 0.0000
+-0.3010 OFF TV 0.0000
+-0.3010 ON TV 0.0000
+-0.3010 RIGHT </s> -0.3010
+-0.3010 SELECT </s> -0.3010
+-0.3010 SOURCE </s> -0.3010
+-0.3010 TO SOURCE 0.0000
+-0.6021 TURN OFF 0.0000
+-0.6021 TURN ON 0.0000
+-0.3010 TV </s> -0.3010
+-0.3010 UP </s> -0.3010
+
+\3-grams:
+-1.0000 <s> GO DOWN
+-1.0000 <s> GO LEFT
+-1.0000 <s> GO RIGHT
+-1.0000 <s> GO TO
+-1.0000 <s> GO UP
+-0.5051 <s> MARCY GO
+-1.2041 <s> MARCY SELECT
+-0.9031 <s> MARCY TURN
+-0.3010 <s> SELECT </s>
+-0.3010 GO DOWN </s>
+-0.3010 GO LEFT </s>
+-0.3010 GO RIGHT </s>
+-0.3010 GO TO SOURCE
+-0.3010 GO UP </s>
+-1.0000 MARCY GO DOWN
+-1.0000 MARCY GO LEFT
+-1.0000 MARCY GO RIGHT
+-1.0000 MARCY GO TO
+-1.0000 MARCY GO UP
+-0.3010 MARCY SELECT </s>
+-0.6021 MARCY TURN OFF
+-0.6021 MARCY TURN ON
+-0.3010 OFF TV </s>
+-0.3010 ON TV </s>
+-0.3010 TO SOURCE </s>
+-0.3010 TURN OFF TV
+-0.3010 TURN ON TV
+
+\end\
