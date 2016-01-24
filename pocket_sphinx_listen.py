@@ -6,12 +6,12 @@ import sys
 def runMain():
     # Now we set up the voice recognition using Pocketsphinx from CMU Sphinx.
     # We can set debug for the listener here to see messages directly from Pocketsphinx
-    pocketSphinxListener = PocketSphinxListener(debug=False)
+    pocketSphinxListener = PocketSphinxListener(debug=True)
 
     while True:
         try:
             # We can set debug here to see what the decoder thinks we are saying as we say it
-            command = pocketSphinxListener.getCommand(debug=False).lower()
+            command = pocketSphinxListener.getCommand(debug=True).lower()
     
         # Exit when control-c is pressed
         except (KeyboardInterrupt, SystemExit):

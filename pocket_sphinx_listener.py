@@ -6,8 +6,8 @@ import gevent
 class PocketSphinxListener(object):
     def __init__(self, debug=False):
         self.hmm = 'cmusphinx-5prealpha-en-us-ptm-2.0/'
-        self.dic = 'dictionary.dic'
-        self.lm = 'language_model.lm'
+        self.dic = 'command.dic'
+        self.lm = 'command.lm'
         self.grammar = 'grammar.jsgf'
         
         self.bitesize = 512
@@ -18,9 +18,9 @@ class PocketSphinxListener(object):
         self.config.set_string('-hmm', self.hmm)
         # The language model is a statistical model that you can use to determine what words the user is trying to say.
         # This can be used in place of a predetermined grammar file.
-        #self.config.set_string('-lm', self.lm)
+        self.config.set_string('-lm', self.lm)
         self.config.set_string('-dict', self.dic)
-        self.config.set_string('-jsgf', self.grammar)
+        #self.config.set_string('-jsgf', self.grammar)
         # Comment out the following line to get debugging output from the decoder. This is useful if the program is failing 
         # with an error such as "argument 1 of type 'Decoder *'"
         if not self.debug:
