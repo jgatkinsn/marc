@@ -24,7 +24,7 @@ class PocketSphinxListener(object):
         # Comment out the following line to get debugging output from the decoder. This is useful if the program is failing 
         # with an error such as "argument 1 of type 'Decoder *'"
         if not self.debug:
-            self.config.set_string('-logfn', '/dev/null')
+           self.config.set_string('-logfn', 'bob')
         self.config.set_boolean("-allphone_ci", True)
 
         self.decoder = Decoder(self.config)
